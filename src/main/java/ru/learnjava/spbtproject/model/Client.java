@@ -1,7 +1,7 @@
 package ru.learnjava.spbtproject.model;
 
 import javax.persistence.*;
-
+//comment
 @Entity
 @Table (name = "client")
 public class Client {
@@ -39,6 +39,7 @@ public class Client {
     public Long getId() {
         return id;
     }
+
 
     public void setId(Long id) {
         this.id = id;
