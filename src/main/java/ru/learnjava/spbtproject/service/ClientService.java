@@ -1,5 +1,6 @@
 package ru.learnjava.spbtproject.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import ru.learnjava.spbtproject.model.Client;
 
 import java.util.List;
@@ -9,11 +10,11 @@ public interface ClientService {
 
     void addNewClient(Client client);
 
-    Optional<Client> getClientById(Long id);
+    Client getClientById(Long id);
 
     List<Client> getClientList();
 
     void deleteClient(Long id);
 
-    void updateClient(Long id, String segment, Double portfolio);
+    Client updateClient(Long id, String json) throws JsonProcessingException;
 }

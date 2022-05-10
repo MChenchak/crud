@@ -8,9 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SpbtprojectApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpbtprojectApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(
+                SpbtprojectApplication.class, args);
+    }
 
 
 }
